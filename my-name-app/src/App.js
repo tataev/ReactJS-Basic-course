@@ -8,17 +8,17 @@ import './App.css';
 function App() {
 
     const [messageList, setMessageList] = useState([{
-        author: "ГЛаДОС",
-        text: "Добро пожаловать в компьютеризированный экспериментальный центр при лаборатории исследования природы ReactJS!"
+        author: "Хизри",
+        text: "Добро пожаловать!"
     }, {
-        author: "ГЛаДОС",
-        text: "Перед началом тестирования хотим вам напомнить, что хотя основным принципом экспериментального центра является обучение в игровой форме, мы не гарантируем отсутствие увечий и травм."
+        author: "Хизри",
+        text: "Тест 1."
     }]);
 
     useEffect(() => {
-        if (messageList[messageList.length - 1].author !== "ГЛаДОС") {
+        if (messageList[messageList.length - 1].author !== "Хизри") {
             setTimeout(() => {
-                setMessageList((prev) => [...prev, {author: "ГЛаДОС", text: "Отступитесь, и вам принесут тортик."}])
+                setMessageList((prev) => [...prev, {author: "Хизри", text: "остановитесь."}])
             }, 2000);
         }
     }, [messageList]);
