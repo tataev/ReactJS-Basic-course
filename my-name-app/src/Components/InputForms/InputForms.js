@@ -1,9 +1,9 @@
 import { memo, useEffect, useRef, useState } from "react";
 import { TextField, Button } from '@material-ui/core';
-import "./module.inputForm.css";
+import "./module.InputForms.css";
 
 
-function InputForm({ setMessageList }) {
+function InputForms({ setMessageList }) {
 
     const inputRef = useRef();
     const [nameValue, setNameValue] = useState("");
@@ -28,4 +28,4 @@ function InputForm({ setMessageList }) {
     );
 };
 
-export default memo(InputForm);
+export default memo(InputForms);
