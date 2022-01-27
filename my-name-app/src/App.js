@@ -3,22 +3,21 @@ import InputForms from './Components/InputForms/InputForms';
 import Chats from "./Components/Chats/Chats";
 import {useEffect, useState} from "react";
 import './App.css';
-// import InputForms from "./Components/InputForms/InputForms";
 
 function App() {
 
     const [messageList, setMessageList] = useState([{
         author: "Хизри",
-        text: "Добро пожаловать!"
+        text: "WELCOME"
     }, {
         author: "Хизри",
-        text: "Тест 1."
+        text: "Добро пожаловать в чат, ведите себя достойно!"
     }]);
 
     useEffect(() => {
         if (messageList[messageList.length - 1].author !== "Хизри") {
             setTimeout(() => {
-                setMessageList((prev) => [...prev, {author: "Хизри", text: "остановитесь."}])
+                setMessageList((prev) => [...prev, {author: "Хизри", text: "незаконное вторжение! Я не звал других участников!"}])
             }, 2000);
         }
     }, [messageList]);

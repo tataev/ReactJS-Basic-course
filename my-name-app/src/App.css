@@ -94,7 +94,7 @@
 }
 
 .Message__author {
-  font-size: 10px;
+  font-size: 14px;
   text-align: right;
   color: #8473d9;
 }
@@ -109,4 +109,13 @@
   100% {
     background-position: 0% 50%;
   }
+}
+
+/*.MuiListItem-root MuiListItem-gutters li {*/
+.MuiListItem-gutters{
+  padding-left: 0;
+  font-size: 20px;
+  display: flex;
+  text-align: center;
+  left: 400px;
 }
