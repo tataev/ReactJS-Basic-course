@@ -8,16 +8,16 @@ function App() {
 
     const [messageList, setMessageList] = useState([{
         author: "Хизри",
-        text: "WELCOME"
+        text: "Добро пожаловать в мой ресторан для людей с именем Хизри!"
     }, {
         author: "Хизри",
-        text: "Добро пожаловать в чат, ведите себя достойно!"
+        text: "заказывать могут гости с именем Хизри 8Р"
     }]);
 
     useEffect(() => {
         if (messageList[messageList.length - 1].author !== "Хизри") {
             setTimeout(() => {
-                setMessageList((prev) => [...prev, {author: "Хизри", text: "незаконное вторжение! Я не звал других участников!"}])
+                setMessageList((prev) => [...prev, {author: "Хизри", text: "Вас зовут не Хизри! Вы не имеете права заказывать в нашем ресторане! Жду дальнейших приказаний от Хизри!"}])
             }, 2000);
         }
     }, [messageList]);
