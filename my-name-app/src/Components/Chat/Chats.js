@@ -3,7 +3,7 @@ import { useState } from "react";
 
 function Chats() {
 
-    const [chats, setChats] = useState([{ id: 1, name: "ГЛаДОС" }]);
+    const [chats, setChats] = useState([{ id: 1, name: "Хизри" }]);
 
     return (
         <List sx={{ width: '100%', maxWidth: 300, bgcolor: "#8feb34", fontWeight: "bold" }}>
