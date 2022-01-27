@@ -1,10 +1,11 @@
-import { useEffect, useState } from 'react';
+import {useEffect, useState} from 'react';
 import './MessagesList.css';
 
-export const MessagesList = ({ author }) => {
+export const MessagesList = ({author}) => {
     const messageInfo = {
         name: author
     };
+
 
     const botMessage = {
         id: Date.now(),
@@ -16,10 +17,10 @@ export const MessagesList = ({ author }) => {
     };
 
     const [messages, setMessages] = useState([]);
-    const [message, setMessage] = useState({ text: '' });
+    const [message, setMessage] = useState({text: ''});
 
     const textHandler = (evt) => {
-        setMessage(Object.assign({ text: evt.target.value, id: Date.now() }, messageInfo));
+        setMessage(Object.assign({text: evt.target.value, id: Date.now()}, messageInfo));
     };
 
     useEffect(() => {
@@ -42,7 +43,8 @@ export const MessagesList = ({ author }) => {
         <div className="App-container">
             <form action="#" className="form" onSubmit={createMessage}>
                 <label htmlFor="formText" className="form__label">
-                    <input type="text" id="formText" className="form__input" value={message.text} onChange={textHandler}/>
+                    <input type="text" id="formText" className="form__input" value={message.text}
+                           onChange={textHandler}/>
                 </label>
                 <button type="submit" className="form__btn">Send</button>
             </form>
@@ -53,7 +55,7 @@ export const MessagesList = ({ author }) => {
     );
 };
 
-const Message = ({ message }) => {
+const Message = ({message}) => {
     const date = new Date();
     return (
         <div className="message">

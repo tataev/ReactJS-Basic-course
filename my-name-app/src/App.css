@@ -1,121 +1,121 @@
 * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .App {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  width: 80%;
-  margin: 0 auto;
-  padding: 0;
-  max-width: 1200px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1200px;
 }
 
 .Chat {
-  width: 14%;
+    width: 14%;
 }
 
 .Chat__item {
-  cursor: pointer;
-  transition: all 0.2s;
-  color: #8473d9;
+    cursor: pointer;
+    transition: all 0.2s;
+    color: #8473d9;
 }
 
 .Chat__item:hover {
-  background-color: #8473d9;
-  color: #ffff;
+    background-color: #8473d9;
+    color: #ffff;
 }
 
 .Message__list {
-  display: flex;
-  justify-content: flex-end;
-  flex-direction: column;
-  align-content: space-between;
-  min-height: 300px;
-  overflow-y: auto;
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  background-size: 300% 300%;
-  animation: gradient 7s ease infinite;
-  padding: 10px;
-  box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-content: space-between;
+    min-height: 300px;
+    overflow-y: auto;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 300% 300%;
+    animation: gradient 7s ease infinite;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 .Message__form {
-  width: 100%;
-  display: flex;
+    width: 100%;
+    display: flex;
 }
 
 .Message__form input {
-  height: 50px;
-  box-sizing: border-box;
-  flex: 1;
-  padding-left: 5px;
-  margin: 5px 0;
-  border: 1px solid #8473d9;
+    height: 50px;
+    box-sizing: border-box;
+    flex: 1;
+    padding-left: 5px;
+    margin: 5px 0;
+    border: 1px solid #8473d9;
 }
 
 .Message__form button {
-  height: 30px;
-  width: 200px;
-  cursor: pointer;
-  color: #ffff;
-  padding: 5px;
-  margin: 15px;
-  background-color: #8473d9;
+    height: 30px;
+    width: 200px;
+    cursor: pointer;
+    color: #ffff;
+    padding: 5px;
+    margin: 15px;
+    background-color: #8473d9;
 }
 
 .Message__form button:hover {
-  color: #8473d9;
-  border: 1px solid #8473d9;
+    color: #8473d9;
+    border: 1px solid #8473d9;
 }
 
 .Message__wrapper {
-  width: 85%;
+    width: 85%;
 }
 
 .Message {
-  padding: 5px;
-  width: 60%;
-  box-sizing: border-box;
-  border-radius: 4px;
-  margin: 0 5px 10px 5px;
-  align-self: flex-end;
+    padding: 5px;
+    width: 60%;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin: 0 5px 10px 5px;
+    align-self: flex-end;
 }
 
 .Message__text {
-  list-style-type: none;
-  color: #4127c7;
+    list-style-type: none;
+    color: #4127c7;
 }
 
 .Message.bot {
-  align-self: flex-start;
+    align-self: flex-start;
 }
 
 .Message__author {
-  font-size: 14px;
-  text-align: right;
-  color: #8473d9;
+    font-size: 14px;
+    text-align: right;
+    color: #8473d9;
 }
 
 @keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 /*.MuiListItem-root MuiListItem-gutters li {*/
-.MuiListItem-gutters{
-  padding-left: 0;
-  font-size: 20px;
-  display: flex;
-  text-align: center;
-  left: 400px;
+.MuiListItem-gutters {
+    padding-left: 0;
+    font-size: 20px;
+    display: flex;
+    text-align: center;
+    left: 400px;
 }

@@ -6,11 +6,13 @@
     text-align: center;
     background-color: #a9a3a3;
 }
+
 .input {
     height: 30px;
     border: 2px solid blue;
     border-radius: 15px;
 }
+
 .btn {
     height: 30px;
     border: 2px solid blue;
