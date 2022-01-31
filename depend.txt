@@ -1,0 +1,106 @@
+1) react
+установка
+npm install -g create-react-app
+create-react-app my-app
+cd my-app
+npm start
+2) @emotion/styled
+установка 
+npm install --save @emotion/styled
+3) @emotion/react
+установка 
+npm install --save @emotion/react
+4) @mui/material
+установка 
+npm install @mui/material
+5) @mui/icons-material
+установка 
+npm install @mui/icons-material
+6) node-sass
+установка 
+npm install node-sass
+7) prop-types
+установка 
+npm install --save prop-types
+8) react-dom
+npm install react react-dom
+9) react-redux
+npm install react-redux
+//The recommended way to start new apps with React Redux is by using the official Redux+JS template for Create React App, which takes advantage of Redux Toolkit.
+//example:
+//npx create-react-app my-app --template redux
+10) react-scripts
+npm install --save redux
+11) react-router-dom
+
+В index.js 
+//прописываем, пример:
+import * as React from "react";
+import * as ReactDOM from "react-dom";
+import { BrowserRouter } from "react-router-dom";
+import "./index.css";
+import App from "./App";
+import * as serviceWorker from "./serviceWorker";
+
+ReactDOM.render(
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>,
+  document.getElementById("root")
+);
+
+//или прописываем в App.js, пример:
+
+import * as React from "react";
+import { Routes, Route, Link } from "react-router-dom";
+import "./App.css";
+
+function App() {
+  return (
+    <div className="App">
+      <h1>Welcome to React Router!</h1>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="about" element={<About />} />
+      </Routes>
+    </div>
+  );
+}
+
+//прописываем в src/App.js компоненты
+function Home() {
+  return (
+    <>
+      <main>
+        <h2>Welcome to the homepage!</h2>
+        <p>You can do this, I believe in you.</p>
+      </main>
+      <nav>
+        <Link to="/about">About</Link>
+      </nav>
+    </>
+  );
+}
+
+function About() {
+  return (
+    <>
+      <main>
+        <h2>Who are we?</h2>
+        <p>
+          That feels like an existential question, don't you
+          think?
+        </p>
+      </main>
+      <nav>
+        <Link to="/">Home</Link>
+      </nav>
+      <nav>
+        <Link to="/">Profile</Link>
+      </nav>
+      <nav>
+        <Link to="/">Chat</Link>
+      </nav>
+    </>
+  );
+}

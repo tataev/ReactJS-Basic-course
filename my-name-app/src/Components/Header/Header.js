@@ -1,7 +1,5 @@
 import {BrowserRouter, Link} from "react-router-dom";
-
 function Header() {
-
     return (
         <header>
             <ul>
@@ -18,5 +16,4 @@ function Header() {
         </header>
     );
 }
-
 export default Header;
