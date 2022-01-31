@@ -7,7 +7,7 @@ function ChatMessages() {
     return (
         <>
             <p>chat id {id}</p>
-            <Messeges />
+            <Messages />
             <InputForm />
         </>
     );
