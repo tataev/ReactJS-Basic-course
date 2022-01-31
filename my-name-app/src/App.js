@@ -1,13 +1,13 @@
-import { BrowserRouter as Router, Route } from "react-router-dom";
+// import * as React from "react";
+import React, {useEffect, useState} from "react";
+import { Route, BrowserRouter as Router, Link } from "react-router-dom";
+import './App.css';
 import Messages from './Components/Messages/Messages';
 import InputForms from './Components/InputForms/InputForms';
 import Header from "./Components/Header/Header";
 import Profile from "./Components/Profile/Profile";
-import ChatMessages from "./Components/ChatMessages/ChatMasseges";
+import ChatMessages from "./Components/ChatMessages/ChatMessages";
 import Chats from "./Components/Chats/Chats";
-import React, {useEffect, useState} from "react";
-// import React, { Component} from 'react';
-import './App.css';
 
 
 function App() {
