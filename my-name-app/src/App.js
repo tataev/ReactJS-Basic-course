@@ -1,8 +1,13 @@
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Header from "./Components/Header/Header";
+import Profile from "./Components/Profile/Profile";
 import Messages from './Components/Messages/Messages';
-import InputForms from './Components/InputForms/InputForms';
+import ChatMessages from "./Components/ChatMessages/ChatMasseges";
 import Chats from "./Components/Chats/Chats";
+import InputForms from './Components/InputForms/InputForms';
 import {useEffect, useState} from "react";
 import './App.css';
+
 
 function App() {
 
@@ -24,13 +29,29 @@ function App() {
 
     return (
         <div className="App">
-            <Chats/>
-            <>
-                <Messages messageList={messageList}/>
-                <InputForms setMessageList={setMessageList}/>
-            </>
+            <Router>
+                <Route exact path="/" component={Header}></Route>
+                <Route exact path="/profile" component={Profile}></Route>
+                <Route exact path="/chats">
+                    <Chats />
+                </Route>
+                <Route exact path="/chats/:id">
+                    <ChatMessages />
+                </Route>
+            </Router>
         </div>
     );
+
+
+    // return (
+    //     <div className="App">
+    //         <Chats/>
+    //         <>
+    //             <Messages messageList={messageList}/>
+    //             <InputForms setMessageList={setMessageList}/>
+    //         </>
+    //     </div>
+    // );
 }
 
 export default App;

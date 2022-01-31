@@ -6,7 +6,6 @@ export const MessagesList = ({author}) => {
         name: author
     };
 
-
     const botMessage = {
         id: Date.now(),
         text: 'Hello! I\'m bot.',
