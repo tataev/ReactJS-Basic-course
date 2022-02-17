@@ -16,14 +16,16 @@
 
 .rndBtn{
   font: inherit;
+  font-size: 24px;
   border-radius: 70px;
   letter-spacing: inherit;
   padding-top: 4px 0 5px;
-  border: 0;
+  border: 0px;
   box-sizing: content-box;
   background: white;
   cursor: pointer;
   margin-left: 10px;
+  display: inline-block;
 }
 
 .go_right{

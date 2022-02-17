@@ -1,6 +1,6 @@
 import { createStore } from "redux";
 
-import { profileReducer } from "./profile/reducer";
+import { profileReducer } from "./profile/Reducer";
 
 export const store = createStore(
   profileReducer,

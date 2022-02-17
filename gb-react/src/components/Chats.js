@@ -1,9 +1,9 @@
 import React, {useCallback, useEffect} from "react";
-import { Form } from "./form";
-import {MessageList} from "./messageList";
+import { Form } from "./Form";
+import {MessageList} from "./MessageList";
 import "../App.css";
-import {Authors} from "../utils/constants";
-import {ChatList} from "./chatList";
+import {Authors} from "../utils/Constants";
+import {ChatList} from "./ChatList";
 import {
   Navigate,
   useParams,

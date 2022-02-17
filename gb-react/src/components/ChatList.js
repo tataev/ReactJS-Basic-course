@@ -1,4 +1,4 @@
-import { ChatItem } from "./chatItem";
+import { ChatItem } from "./ChatItem";
 import { TextField } from "@mui/material";
 import React from "react";
 import Button from "@mui/material/Button";

@@ -1,4 +1,4 @@
-import { TOGGLE_CHECKBOX } from "./actions";
+import { TOGGLE_CHECKBOX } from "./Actions";
 
 const initialState = {
   name: "мужчина",

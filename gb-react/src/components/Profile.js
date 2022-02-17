@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { toggleCheckbox } from "../store/profile/actions";
+import { toggleCheckbox } from "../store/profile/Actions";
 
 export const Profile = () => {
   const checkboxValue = useSelector(state => state.checkbox);

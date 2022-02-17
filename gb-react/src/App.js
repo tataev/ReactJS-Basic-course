@@ -1,12 +1,12 @@
 import React, {useState, useCallback} from "react";
 import {BrowserRouter, Link, Routes, Route} from "react-router-dom";
-import {ChatList} from "./components/chatList";
-import Chats from "./components/chats";
-import {Home} from "./components/home";
-import {Profile} from "./components/profile";
-import {Authors} from "./utils/constants";
+import {ChatList} from "./components/ChatList";
+import Chats from "./components/Chats";
+import {Home} from "./components/Home";
+import {Profile} from "./components/Profile";
+import {Authors} from "./utils/Constants";
 import {Provider} from "react-redux";
-import {store} from "./store/store";
+import {store} from "./store/Store";
 
 const initialMessages = {
     chat1: [
