@@ -59,11 +59,11 @@ const initialChatList = [
     id: "chat3",
   },
   name: "чат 4",
-    id: "chat3",
-},
+    id: "chat4",
+  },
 name: "чат 5",
-    id: "chat3",
-},
+    id: "chat5",
+  },
 ];
 
 export const App = () => {
