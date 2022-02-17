@@ -14,8 +14,28 @@
   text-decoration: none;
 }
 
+.rndBtn{
+  font: inherit;
+  border-radius: 70px;
+  letter-spacing: inherit;
+  padding-top: 4px 0 5px;
+  border: 0;
+  box-sizing: content-box;
+  background: white;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.go_right{
+  margin-left: 50px;
+}
+
+.turn_white{
+  color: white;
+}
+
 .App-message {
-  background-color: #E1FFC7;
+  background-color: #005c4b;
   border-radius: 10px 100px / 120px;
   min-height: 40px;
   width: 50%;
@@ -171,6 +191,7 @@ body {
 }
 
 .user-bar:after {
+  color: #fff;
   content: "";
   display: table;
   clear: both;

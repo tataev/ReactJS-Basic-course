@@ -13,9 +13,12 @@ export const Profile = () => {
 
   return (
     <>
-      <h3>PROFILE</h3>
-      <input type="checkbox" checked={checkboxValue} onChange={handleChange} />
+      <h3 align="center">Профиль</h3>
+      <input class = "go_right " align="center" type="checkbox" checked={checkboxValue} onChange={handleChange} />
       <span>{name}</span>
+        <br/>
+        {/*<input align="center" type="checkbox" checked={checkboxValue} onChange={handleChange} />*/}
+        {/*<span>женщина</span>*/}
     </>
   );
 };

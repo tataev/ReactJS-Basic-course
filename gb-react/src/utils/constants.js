@@ -1,4 +1,4 @@
 export const Authors = {
-  human: "human",
+  human: "Малкович: ",
   bot: "bot",
 };
