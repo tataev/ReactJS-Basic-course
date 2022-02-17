@@ -11,39 +11,59 @@ import { store } from "./store/store";
 const initialMessages = {
   chat1: [
     {
-      text: "text1",
+      text: "Чат 1, Добро пожаловать в семью Малковичей!",
       author: Authors.human,
       id: "mess1",
     },
   ],
   chat2: [
     {
-      text: "this is chat2",
+      text: "Чат 2, Малковичи готовят",
       author: Authors.human,
       id: "mess2",
     },
   ],
   chat3: [
     {
-      text: "this is chat3",
+      text: "Чат 3, Малковичи путешествуют",
       author: Authors.human,
       id: "mess3",
+    },
+  ],
+  chat4: [
+    {
+      text: "Чат 4, учёба Малковичей",
+      author: Authors.human,
+      id: "mess4",
+    },
+  ],
+  chat5: [
+    {
+      text: "Чат 5, Малковичи на работе",
+      author: Authors.human,
+      id: "mess5",
     },
   ],
 };
 const initialChatList = [
   {
-    name: "chat1",
+    name: "чат 1 ",
     id: "chat1",
   },
   {
-    name: "chat2",
+    name: "чат 2 ",
     id: "chat2",
   },
   {
-    name: "chat3",
+    name: "чат 3",
     id: "chat3",
   },
+  name: "чат 4",
+    id: "chat3",
+},
+name: "чат 5",
+    id: "chat3",
+},
 ];
 
 export const App = () => {
