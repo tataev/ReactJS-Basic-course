@@ -35,8 +35,8 @@ export const Form = ({onSendMessage}) => {
         onChange={handleChange}
         inputRef={inputRef}
       />
-      <Button variant="outlined" type="submit">
-        Send
+      <Button class = "rndBtn" variant="outlined" type="submit">
+        Отправить ➠️
       </Button>
     </form>
   )

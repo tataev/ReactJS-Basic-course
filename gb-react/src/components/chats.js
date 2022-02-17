@@ -25,7 +25,7 @@ function Chats({ chatList, messages, setMessages, onDeleteChat, onAddChat  }) {
       const timeout = setTimeout(()=>
         handleSendMessage({
           author: Authors.bot,
-          text: "Hello. I am bot!",
+          text: "Привет! Меня зовут Джон Малкович!",
           id: ` mess-${Date.now()}`
         }), 1000);
       return ()=> clearTimeout(timeout);

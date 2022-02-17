@@ -1,10 +1,10 @@
 import { TOGGLE_CHECKBOX } from "./actions";
 
 const initialState = {
-  options: [{name: "мужчина", checked: true}, {name: "женщина", checked: false}],
   name: "мужчина",
   checkbox: true,
-};
+  }
+;
 
 export const profileReducer = (state = initialState, action) => {
   switch (action.type) {

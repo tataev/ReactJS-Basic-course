@@ -18,7 +18,7 @@ export const ChatList = ({chatList, onAddChat, onDeleteChat}) => {
   };
   return (
     <div className="App-list">
-      <h3>List of chats</h3>
+      <h3 class="turn_white" color="white">Список чатов 📒</h3>
       <ul>
         {chatList.map((chat) => (
             <ChatItem chat={chat} onDeleteChat={onDeleteChat} />
